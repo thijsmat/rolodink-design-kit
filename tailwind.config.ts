@@ -80,8 +80,8 @@ export default {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       fontFamily: {
-        playfair: ['"Playfair Display"', 'serif'],
-        inter: ['Inter', 'sans-serif'],
+        playfair: ['"Playfair Display"', "serif"],
+        inter: ["Inter", "sans-serif"],
       },
     },
   },
