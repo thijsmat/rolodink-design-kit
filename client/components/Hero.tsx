@@ -9,15 +9,20 @@ export default function Hero() {
           <div className="flex-1 max-w-[536px] flex flex-col gap-4 sm:gap-6 lg:gap-8 w-full lg:w-auto">
             <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full border border-gold/20 bg-gold/10 self-start">
               <div className="w-2 h-2 rounded-full bg-gold flex-shrink-0"></div>
-              <span className="text-xs sm:text-sm text-gold">Gratis Chrome extensie</span>
+              <span className="text-xs sm:text-sm text-gold">
+                Gratis Chrome extensie
+              </span>
             </div>
 
             <h1 className="font-playfair font-semibold text-3xl sm:text-4xl lg:text-[60px] leading-tight sm:leading-[1.2] lg:leading-[75px] text-azure">
-              Van de achterkant van een visitekaartje naar de toekomst van netwerken
+              Van de achterkant van een visitekaartje naar de toekomst van
+              netwerken
             </h1>
 
             <p className="text-base sm:text-lg lg:text-xl leading-relaxed sm:leading-[1.6] lg:leading-[32.5px] text-grey">
-              Rolodink brengt de persoonlijke touch van business cards naar LinkedIn. Voeg moeiteloos persoonlijke notities toe aan elk contact en onthoud waarom jullie connectie waardevol is.
+              Rolodink brengt de persoonlijke touch van business cards naar
+              LinkedIn. Voeg moeiteloos persoonlijke notities toe aan elk
+              contact en onthoud waarom jullie connectie waardevol is.
             </p>
 
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
@@ -35,10 +40,15 @@ export default function Hero() {
               <div className="flex items-center gap-2">
                 <div className="flex -space-x-2">
                   {[1, 2, 3, 4].map((i) => (
-                    <div key={i} className="w-6 sm:w-8 h-6 sm:h-8 rounded-full border-2 border-background bg-gold flex-shrink-0"></div>
+                    <div
+                      key={i}
+                      className="w-6 sm:w-8 h-6 sm:h-8 rounded-full border-2 border-background bg-gold flex-shrink-0"
+                    ></div>
                   ))}
                 </div>
-                <span className="text-xs sm:text-sm text-grey">500+ gebruikers</span>
+                <span className="text-xs sm:text-sm text-grey">
+                  500+ gebruikers
+                </span>
               </div>
               <div className="flex items-center gap-1">
                 <div className="flex gap-0.5">
@@ -65,13 +75,18 @@ export default function Hero() {
                     JD
                   </div>
                   <div className="flex-1 min-w-0">
-                    <h3 className="font-semibold text-azure text-sm sm:text-base truncate">Jan de Vries</h3>
-                    <p className="text-xs sm:text-sm text-grey truncate">Product Manager @ TechCorp</p>
+                    <h3 className="font-semibold text-azure text-sm sm:text-base truncate">
+                      Jan de Vries
+                    </h3>
+                    <p className="text-xs sm:text-sm text-grey truncate">
+                      Product Manager @ TechCorp
+                    </p>
                   </div>
                 </div>
                 <div className="bg-background border border-gold/20 rounded-lg sm:rounded-xl p-3 sm:p-4 relative z-10">
                   <p className="text-xs sm:text-sm text-grey italic leading-relaxed">
-                    "Ontmoet op Networking Event Amsterdam. Geïnteresseerd in AI voor recruitment. Stuur artikel over ChatGPT."
+                    "Ontmoet op Networking Event Amsterdam. Geïnteresseerd in AI
+                    voor recruitment. Stuur artikel over ChatGPT."
                   </p>
                 </div>
               </div>

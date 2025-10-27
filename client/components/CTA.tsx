@@ -6,14 +6,15 @@ export default function CTA() {
     <section className="py-12 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-azure to-azure/80 relative overflow-hidden">
       <div className="absolute top-0 right-0 w-48 sm:w-96 h-48 sm:h-96 rounded-full bg-gold/10 blur-2xl sm:blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-48 sm:w-96 h-48 sm:h-96 rounded-full bg-linkBlue/10 blur-2xl sm:blur-3xl"></div>
-      
+
       <div className="max-w-[896px] mx-auto relative z-10">
         <div className="text-center mb-6 sm:mb-8">
           <h2 className="font-playfair font-semibold text-3xl sm:text-4xl lg:text-5xl text-white mb-3 sm:mb-4">
             Klaar om je netwerk te versterken?
           </h2>
           <p className="text-base sm:text-lg lg:text-xl text-white/80 max-w-[672px] mx-auto px-4 sm:px-0">
-            Voeg vandaag nog Rolodink toe aan Chrome en begin met het opbouwen van betekenisvolle, persoonlijke professionele relaties.
+            Voeg vandaag nog Rolodink toe aan Chrome en begin met het opbouwen
+            van betekenisvolle, persoonlijke professionele relaties.
           </p>
         </div>
 
