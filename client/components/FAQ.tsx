@@ -3,8 +3,7 @@ import { useState } from "react";
 const faqs = [
   {
     question: "Waarom Rolodink? Er zijn toch genoeg CRM-systemen?",
-    answer:
-      "Rolodink is specifiek ontworpen voor LinkedIn en focust op persoonlijke notities in plaats van complexe CRM-functies.",
+    answer: "Rolodink is specifiek ontworpen voor LinkedIn en focust op persoonlijke notities in plaats van complexe CRM-functies.",
   },
   {
     question: "Is Rolodink echt gratis?",
@@ -12,23 +11,19 @@ const faqs = [
   },
   {
     question: "Hoe veilig zijn mijn notities?",
-    answer:
-      "Je notities worden veilig opgeslagen en zijn alleen voor jou zichtbaar. We hebben volledige privacy garanties.",
+    answer: "Je notities worden veilig opgeslagen en zijn alleen voor jou zichtbaar. We hebben volledige privacy garanties.",
   },
   {
     question: "Werkt Rolodink ook op mobiel?",
-    answer:
-      "Momenteel is Rolodink beschikbaar als Chrome extensie. Een mobiele versie is in ontwikkeling.",
+    answer: "Momenteel is Rolodink beschikbaar als Chrome extensie. Een mobiele versie is in ontwikkeling.",
   },
   {
     question: "Kan ik mijn notities exporteren?",
-    answer:
-      "Ja, je kunt al je notities exporteren naar verschillende formaten voor backup en overdracht.",
+    answer: "Ja, je kunt al je notities exporteren naar verschillende formaten voor backup en overdracht.",
   },
   {
     question: "Zien anderen mijn notities op LinkedIn?",
-    answer:
-      "Nee, je notities zijn volledig privé en alleen zichtbaar voor jou.",
+    answer: "Nee, je notities zijn volledig privé en alleen zichtbaar voor jou.",
   },
 ];
 
@@ -80,10 +75,8 @@ export default function FAQ() {
                 </svg>
               </button>
               {openIndex === index && (
-                <div className="px-6 pb-5">
-                  <p className="text-grey text-sm leading-relaxed">
-                    {faq.answer}
-                  </p>
+                <div className="px-4 sm:px-6 pb-4 sm:pb-5 border-t border-azure/10">
+                  <p className="text-grey text-xs sm:text-sm leading-relaxed pt-4">{faq.answer}</p>
                 </div>
               )}
             </div>
