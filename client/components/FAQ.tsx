@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { ChevronDown } from "lucide-react";
 
 const faqs = [
   {
@@ -55,24 +56,11 @@ export default function FAQ() {
                 <span className="font-semibold text-xs sm:text-sm text-azure">
                   {faq.question}
                 </span>
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className={`flex-shrink-0 transition-transform ${
+                <ChevronDown
+                  className={`h-4 w-4 flex-shrink-0 transition-transform text-neutral-500 ${
                     openIndex === index ? "rotate-180" : ""
                   }`}
-                >
-                  <path
-                    d="M4 6L8 10L12 6"
-                    stroke="#525252"
-                    strokeWidth="1.33333"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
+                />
               </button>
               {openIndex === index && (
                 <div className="px-4 sm:px-6 pb-4 sm:pb-5 border-t border-azure/10">
