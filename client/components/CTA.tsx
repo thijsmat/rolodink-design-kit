@@ -62,7 +62,7 @@ export default function CTA() {
             </svg>
             Add to Chrome - Gratis
           </button>
-          <button className="h-10 px-4 rounded-lg border-2 border-white/30 text-white text-sm font-medium hover:bg-white/10 transition-colors flex items-center gap-2">
+          <button className="h-10 px-3 sm:px-4 rounded-lg border-2 border-white/30 text-white text-xs sm:text-sm font-medium hover:bg-white/10 transition-colors flex items-center justify-center gap-2">
             Bekijk demo
             <svg
               width="16"

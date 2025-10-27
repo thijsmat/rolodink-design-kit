@@ -109,8 +109,8 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="font-semibold mb-4">Product</h3>
-            <ul className="space-y-3 text-white/80 text-sm">
+            <h3 className="font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Product</h3>
+            <ul className="space-y-2 sm:space-y-3 text-white/80 text-xs sm:text-sm">
               <li>
                 <a
                   href="#features"
@@ -138,8 +138,8 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="font-semibold mb-4">Support</h3>
-            <ul className="space-y-3 text-white/80 text-sm">
+            <h3 className="font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Support</h3>
+            <ul className="space-y-2 sm:space-y-3 text-white/80 text-xs sm:text-sm">
               <li>
                 <a href="#faq" className="hover:text-white transition-colors">
                   FAQ

@@ -36,28 +36,28 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section id="faq" className="py-24 px-8">
+    <section id="faq" className="py-12 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-[768px] mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="font-playfair font-semibold text-5xl text-azure mb-4">
+        <div className="text-center mb-10 sm:mb-16">
+          <h2 className="font-playfair font-semibold text-3xl sm:text-4xl lg:text-5xl text-azure mb-3 sm:mb-4">
             Veelgestelde vragen
           </h2>
-          <p className="text-xl text-grey">
+          <p className="text-base sm:text-lg lg:text-xl text-grey">
             Alles wat je moet weten over Rolodink
           </p>
         </div>
 
-        <div className="space-y-4">
+        <div className="space-y-3 sm:space-y-4">
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="bg-white border border-azure/10 rounded-2xl shadow-sm overflow-hidden"
+              className="bg-white border border-azure/10 rounded-lg sm:rounded-2xl shadow-sm overflow-hidden"
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-azure/5 transition-colors"
+                className="w-full px-4 sm:px-6 py-4 sm:py-5 flex items-center justify-between text-left hover:bg-azure/5 transition-colors gap-3"
               >
-                <span className="font-semibold text-sm text-azure pr-4">
+                <span className="font-semibold text-xs sm:text-sm text-azure">
                   {faq.question}
                 </span>
                 <svg

@@ -1,8 +1,8 @@
 export default function Hero() {
   return (
-    <section className="pt-24 pb-24 px-8">
+    <section className="pt-20 sm:pt-24 pb-12 sm:pb-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-[1136px] mx-auto">
-        <div className="flex items-center justify-center gap-16">
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16">
           <div className="flex-1 max-w-[536px] flex flex-col gap-8">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gold/20 bg-gold/10 self-start">
               <div className="w-2 h-2 rounded-full bg-gold"></div>
@@ -67,7 +67,7 @@ export default function Hero() {
                 </svg>
                 Add to Chrome - Gratis
               </button>
-              <button className="h-10 px-4 rounded-lg border-2 border-gold bg-background text-gold text-sm font-medium hover:bg-gold/5 transition-colors flex items-center gap-2">
+              <button className="h-10 sm:h-10 px-3 sm:px-4 rounded-lg border-2 border-gold bg-background text-gold text-xs sm:text-sm font-medium hover:bg-gold/5 transition-colors flex items-center justify-center gap-2">
                 <svg
                   width="16"
                   height="16"
@@ -100,15 +100,15 @@ export default function Hero() {
                 <span className="text-sm text-grey">500+ gebruikers</span>
               </div>
               <div className="flex items-center gap-1">
-                <span className="text-gold">★★★★★</span>
+                <span className="text-gold">★★★��★</span>
                 <span className="text-sm text-grey ml-1">4.9/5</span>
               </div>
             </div>
           </div>
 
-          <div className="flex-1 max-w-[536px] flex items-center justify-center">
-            <div className="relative">
-              <div className="w-[512px] rotate-2 bg-white rounded-2xl shadow-2xl p-8 flex flex-col gap-6 relative">
+          <div className="flex-1 max-w-[536px] flex items-center justify-center w-full lg:w-auto">
+            <div className="relative w-full">
+              <div className="w-full bg-white rounded-xl sm:rounded-2xl shadow-xl sm:shadow-2xl p-4 sm:p-8 flex flex-col gap-4 sm:gap-6 relative rotate-1 sm:rotate-2">
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-gold/5 to-gold/0"></div>
                 <img
                   src="https://api.builder.io/api/v1/image/assets/TEMP/e7ffcbf098ffe35ae50afc7e64c526af17538e04?width=896"

@@ -33,18 +33,18 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="py-24 px-8">
+    <section id="testimonials" className="py-12 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-[1136px] mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="font-playfair font-semibold text-5xl text-azure mb-4">
+        <div className="text-center mb-10 sm:mb-16">
+          <h2 className="font-playfair font-semibold text-3xl sm:text-4xl lg:text-5xl text-azure mb-3 sm:mb-4">
             Zo gebruiken professionals Rolodink
           </h2>
-          <p className="text-xl text-grey max-w-[672px] mx-auto">
+          <p className="text-base sm:text-lg lg:text-xl text-grey max-w-[672px] mx-auto px-4 sm:px-0">
             Ontdek hoe anderen hun netwerk versterken met persoonlijke notities.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
