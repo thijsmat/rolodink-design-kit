@@ -1,3 +1,6 @@
+import { Card, CardHeader, CardContent } from "@/components/ui/card";
+import { Star } from "lucide-react";
+
 const testimonials = [
   {
     name: "Sarah van Berg",
@@ -46,8 +49,8 @@ export default function Testimonials() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-white border border-azure/10 rounded-lg sm:rounded-2xl p-4 sm:p-8 relative">
-              <div className="flex items-start gap-3 sm:gap-4 mb-4 sm:mb-6">
+            <Card key={index} className="bg-white border border-azure/10 rounded-lg sm:rounded-2xl p-4 sm:p-8 relative">
+              <CardHeader className="flex items-start gap-3 sm:gap-4 mb-4 sm:mb-6 p-0">
                 <div className="w-10 sm:w-12 h-10 sm:h-12 rounded-full bg-gradient-to-br from-linkBlue to-linkBlue/80 flex items-center justify-center flex-shrink-0">
                   <span className="text-white font-semibold text-xs sm:text-base">{testimonial.initials}</span>
                 </div>
@@ -56,11 +59,11 @@ export default function Testimonials() {
                   <p className="text-xs sm:text-sm text-grey truncate">{testimonial.role}</p>
                   <div className="flex gap-0.5 mt-1">
                     {[1, 2, 3, 4, 5].map((i) => (
-                      <span key={i} className="text-gold text-xs sm:text-sm">★</span>
+                      <Star key={i} className="h-4 w-4 text-gold fill-current" />
                     ))}
                   </div>
                 </div>
-              </div>
+              </CardHeader>
 
               <div className="absolute top-4 sm:top-6 right-4 sm:right-6 opacity-10">
                 <svg width="50" height="50" viewBox="0 0 73 73" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -69,23 +72,25 @@ export default function Testimonials() {
                 </svg>
               </div>
 
-              <div className="bg-background border border-gold/20 rounded-lg sm:rounded-xl p-3 sm:p-4 shadow-sm space-y-3 relative z-10">
-                {testimonial.notes.map((note, noteIndex) => (
-                  <div key={noteIndex} className="flex items-start gap-2">
-                    <div className={`w-1.5 h-1.5 rounded-full flex-shrink-0 mt-1 ${
-                      note.type === 'quote' ? 'bg-gold' :
-                      note.type === 'action' ? 'bg-azure' : 'bg-linkBlue'
-                    }`}></div>
-                    <p className={`text-xs sm:text-sm ${
-                      note.type === 'quote' ? 'text-grey italic' :
-                      note.type === 'action' ? 'text-azure font-medium' : 'text-grey'
-                    }`}>
-                      {note.text}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
+              <CardContent className="p-0">
+                <div className="bg-background border border-gold/20 rounded-lg sm:rounded-xl p-3 sm:p-4 shadow-sm space-y-3 relative z-10">
+                  {testimonial.notes.map((note, noteIndex) => (
+                    <div key={noteIndex} className="flex items-start gap-2">
+                      <div className={`w-1.5 h-1.5 rounded-full flex-shrink-0 mt-1 ${
+                        note.type === 'quote' ? 'bg-gold' :
+                        note.type === 'action' ? 'bg-azure' : 'bg-linkBlue'
+                      }`}></div>
+                      <p className={`text-xs sm:text-sm ${
+                        note.type === 'quote' ? 'text-grey italic' :
+                        note.type === 'action' ? 'text-azure font-medium' : 'text-grey'
+                      }`}>
+                        {note.text}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
           ))}
         </div>
       </div>
